@@ -105,3 +105,17 @@
     echo gettype($isdog);
 
 ?>
+
+<?php
+    //Concatenacion e interpolacion
+    $word1 = 'Gustavo';
+    $word2 = 'Romero';
+
+    //concatenacion
+    echo 'Hola '.$word1.' '.$word2;
+
+    //interpolacion
+    //usando llaves puedes agregar texto adicional
+    echo "Hola {$word1}Andres $word2";
+
+?>
