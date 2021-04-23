@@ -7,8 +7,10 @@
     //Niveles de error
     // Parsed error - Fatal error - Notice error
     //Custom error
+?>
 
-##Varibles y tipod
+<?php
+##Variables y tipos
 
     //VARIABLES Y CONSTANTES
 
@@ -37,7 +39,9 @@
     //print_r imprimer arreglos
     //print_r(get_defined_constants(true));
 
+?>
 
+<?php
     //COMILLAS SIMPLES Y DOBLES
 
 
@@ -52,4 +56,24 @@
 
     //Para poner el signo $
     echo " Tu ganas mucho dinero \$_$"
+
+?>
+
+<?php
+    //SINTAXIS HEREDOC Y NOWDOC
+    
+    //Heredoc --reconoce caracteres espciales o variables
+    $animal=<<<FRASE
+    "Con esfuerzo y perserverancia \n podrás alcanzar tus metas"
+    'Hola'
+    FRASE;
+
+    //Nowdoc -- no reconoce caracteres espciales o variables
+    $nowdoc=<<<'FRASE'
+    "Con esfuerzo y perserverancia \n podrás alcanzar tus metas"
+    'Hola'
+    FRASE;
+
+    echo $animal;
+    echo $nowdoc;
 ?>
