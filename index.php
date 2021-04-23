@@ -10,7 +10,7 @@
 
 ##Varibles y tipod
 
-    //Variables y constantes
+    //VARIABLES Y CONSTANTES
 
     //declaración de variables
     $rosa = 'color ';
@@ -35,5 +35,21 @@
     echo PATH2;
 
     //print_r imprimer arreglos
-    print_r(get_defined_constants(true));
+    //print_r(get_defined_constants(true));
+
+
+    //COMILLAS SIMPLES Y DOBLES
+
+
+    $nombre = 'Gustavo';
+    //Comillas simples
+    echo '\n \"Hola $nombre \n como estas \' " ';
+
+    //Comillas dobles 
+
+    //Para poner comilas dentro de comillas usar \"
+    echo "\n \"Hola $nombre \n como estas\" ";
+
+    //Para poner el signo $
+    echo " Tu ganas mucho dinero \$_$"
 ?>
