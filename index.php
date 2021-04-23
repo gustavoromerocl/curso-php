@@ -77,3 +77,31 @@
     echo $animal;
     echo $nowdoc;
 ?>
+
+<?php
+    //Conversion de tipos
+
+    //Las variables asumen el tipo de dato que se le asgina de forma dinamica
+    $var='hola';
+    $price=2000.10;
+    $age=12;
+    $name='Ozzy';
+    $isdog=true;
+
+    //se asigna un nuevo tipo de dato de forma explicita
+    $price=(int)$price;
+    $name=(bool)$name;
+
+    //Usando funciones
+    $price=intval($price);
+    $name=boolval($name);
+    $isdog=floatval($isdog);
+    $age=strval($age);
+
+    echo gettype($var);
+    echo var_dump($price); //muestra el tipo y el valor de la variable
+    echo var_dump($age);
+    echo var_dump($name);
+    echo gettype($isdog);
+
+?>
