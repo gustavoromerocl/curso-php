@@ -30,3 +30,14 @@ echo var_dump($age===18)
     $result=$operando1%$operando2; //residuo
     $result=$operando1**$operando2;//Exponenciacion base**potencia
 ?>
+
+<?php
+##Asignacion
+    $a=15; // = Asigna el valor a una variable
+    $b=5;
+    $c=&$a; // El operador & asigna el valor de la variable aunque esta cambie posteriormente en el codigo
+    //operador combinado
+    $a+=$b; // Lo mismo que $a = $a + $b
+
+    echo "a = $a - c = $c"
+?>
