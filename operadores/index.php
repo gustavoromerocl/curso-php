@@ -70,3 +70,20 @@ echo var_dump($age===18)
 
     //Para realizar la operacion opuesta usar --
 ?>
+
+<?php
+##Ternario, Elvis y Fusión null
+
+//Operador ternario: (Expression bool)?expression:expression
+$age=18;
+//echo ($age>=18)?'Eres mayor de edad':'Eres menor de edad';
+
+
+//Operador Elvis: ?:
+//Asina un valor en caso de que la variable este vacia
+//echo $age?:'No hay edad';
+
+//Fusión null: ??
+//Funciona igual que elvis, también para casos en que la variable no haya sido inicializada
+echo $age?:'No hay edad';
+?>
