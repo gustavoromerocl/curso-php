@@ -41,3 +41,21 @@ echo var_dump($age===18)
 
     echo "a = $a - c = $c"
 ?>
+
+<?php
+##Operadores lógicos
+    $asistencia=10;
+    $promedio=7;
+
+    $resultado= ($asistencia >= 8 && $promedio >= 5); // Operador Y: ambas condiciones deben ser verdadera
+    $resultado= ($asistencia >= 8 || $promedio >= 5); //Operador O: Al menos una condicion se debe cumplir para que se verdadera
+    $resultado= !($asistencia >= 8); //OPERADOR NOT: invierte el resultado
+    var_dump($resultado);
+
+    /*
+    AND es igual que &&
+    OR es igual que ||
+    XOR se cumple unicamente si una de las condiciones se cumple
+    */ 
+
+?>
