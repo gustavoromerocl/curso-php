@@ -59,3 +59,14 @@ echo var_dump($age===18)
     */ 
 
 ?>
+
+
+<?php
+##Incremento y decremento
+    $a=5;
+    //echo 'pre incremento '.++$a."\n";
+    echo 'pos incremento '.$a++."\n";
+    echo 'resultado '.$a;
+
+    //Para realizar la operacion opuesta usar --
+?>
