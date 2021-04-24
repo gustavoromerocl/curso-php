@@ -148,3 +148,33 @@
     //https://www.php.net/manual/es/
 ?>
  
+<?php
+    //PCRE Perl Compatible Regular Expression
+    $text='Hola mundo en 123';
+    $regex='/^H[aiezo]la/i'; 
+    $regex='/^H[a-f]la/i'; 
+    $regex='/^H[0-9]la/i'; 
+
+    $text='Hola vivo en México';
+    $regex='/Mé(x|j)ico/'; 
+    //^ busca al comienzo de la cadena
+    //$ busca al final de la cadena
+    //i no descrimina entre mayusculas y minusculas
+
+    //Recibe el parametro y donde buscar
+    //echo preg_match($regex, $text)
+
+    $text='Los números son 1 4 5 6';
+    $regex='/\d/'; //$regex='/[0-9]/';
+    //d = numeros  // D = todo menos los numeros
+
+    $regex='/\w/'; //$regex='/[A-Za-z0-9]/';
+    //w =  alfanumericos // W = no alfanumericos
+
+    //$regex='/27\/11\/1990/'; // usando barras  
+    echo preg_match_all($regex, $text, $matches);
+    print_r($matches);
+
+    // * 0 o más concurrencias
+    // + una o más concurrencias
+?>
