@@ -119,3 +119,14 @@
     echo "Hola {$word1}Andres $word2";
 
 ?>
+
+<?php
+    //Extraer y buscar
+    $myString='Bienvenido al mundo de la programacion';
+    $findme='programacion';
+
+    echo substr("Gustavo Andres Romero Pérez",8,6);
+    echo substr("Gustavo Andres Romero Pérez",-7);
+    // retorna la posicion del elemento buscado
+    echo strpos($myString, $findme, 12); //El tecer parametro es para indicar desde que posicion comienza la busqueda
+?>
