@@ -130,3 +130,21 @@
     // retorna la posicion del elemento buscado
     echo strpos($myString, $findme, 12); //El tecer parametro es para indicar desde que posicion comienza la busqueda
 ?>
+
+<?php
+    //Reemplazo y formateo
+    $search=' ';
+    $replace=':';
+    $text='91 75 1A EC 9A C7';
+
+    $arg1=1994;
+    $arg2='PHP';
+    //$text='En %d fue creado %s';
+    $text='En %2$s fue creado %1$d';
+    //echo str_replace($search, $replace, $text, $count)  //el argumento count devulve la contidad de coincidencias cambiadas 
+
+    echo sprintf($text,$arg1,$arg2);
+
+    //https://www.php.net/manual/es/
+?>
+ 
