@@ -14,3 +14,21 @@
         echo 'No puedes ver la pelicula por que tu edad es menor a 18';
     }
 ?>
+
+<?php
+    $shirt='Verde';
+    switch($shirt):
+        case 'Rojo':
+            echo 'Camisa color rojo';
+            break;
+        case 'Azuk':
+            echo 'Camisa color azul';
+            break;
+        case 'Verde':
+            echo 'Camisa color verde';
+            break;
+        default:
+            echo 'No encontramos lo que buscabas';
+        break;
+    endswitch;
+?>
