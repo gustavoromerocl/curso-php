@@ -60,3 +60,16 @@
         ++$cont;
     }while($cont<=12);
 ?>
+
+<?php
+##FOreach
+    $animals = array('Gato', 'Perro', 'Panda');
+    $datas = array('Nombre' => 'Gustavo', 'Apellido' => 'Romero', 'Sexo' => 'Masculino');
+    foreach($animals as $animal){
+        echo "El animal es $animal \n";
+    }
+
+    foreach($datas as $clave => $valor){
+        echo "La clave es $clave y el valor es $valor \n";
+    }
+?>
