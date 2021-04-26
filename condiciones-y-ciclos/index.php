@@ -45,3 +45,18 @@
         echo "Anuncio repetir $i \n";
     }
 ?>
+
+<?php
+##While y do While
+    $cont=1;
+    while($cont<=12){
+        echo "Zapato numero $cont \n";
+        ++$cont;
+    }
+
+//La diferencia con while es que al menos se ejecuta una vez el codigo
+    do{
+        echo "Zapato numero $cont \n";
+        ++$cont;
+    }while($cont<=12);
+?>
