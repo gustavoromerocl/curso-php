@@ -3,7 +3,7 @@
 ?>
 
 <?php
-    ##If, else y else if
+##If, else y else if
     $edad=15;
     if($edad >= 18 && $edad<=30){
         echo 'Puedes ver la pelicula';
@@ -16,6 +16,7 @@
 ?>
 
 <?php
+##Switch
     $shirt='Verde';
     switch($shirt):
         case 'Rojo':
@@ -31,4 +32,16 @@
             echo 'No encontramos lo que buscabas';
         break;
     endswitch;
+?>
+
+<?php
+##For
+    for($i=1; $i<=10;++$i){
+        echo "Anuncio repetir $i \n";
+    }
+
+    //Inverso
+    for($i=10; $i>=1;--$i){
+        echo "Anuncio repetir $i \n";
+    }
 ?>
