@@ -1,8 +1,9 @@
 <?php
-    echo "ARREGLOS \n"
+    echo "ARREGLOS \n";
 ?>
 
 <?php
+    echo "Arreglos indexados \n";
     $color1='Rojo';
     $color2='Violeta';
     $color3='Verde';
@@ -12,4 +13,13 @@
     echo $colors[1];
     $colors[2]='nuevo color';
     print_r($colors);
+?>
+
+<?php
+    echo "Arreglos asociativos \n";
+    $person=array('name'=>'Gustavo', 'lastname'=>'Romero', 'age'=>'30');
+    print_r($person);
+    print_r($person['name']); ##Obtener el valor a través de la clave
+    $person['lastname'] = 'Romo'; ##Asignar otro valor
+    print_r($person);
 ?>
