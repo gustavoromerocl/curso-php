@@ -71,7 +71,7 @@
 ?>
 
 <?php
-    echo "FUNCIONES VARIABLES O ANONIMAS \n";
+    echo "FUNCIONES VARIABLES Y ANONIMAS \n";
     ##Función anónima
     $operation=function($num1,$num2){
         return $num1+$num2;
@@ -87,4 +87,23 @@
 
     $call = 'variable';
     $call();
+?>
+
+<?php
+    ##declare(strict_types=1);
+    echo "DECLARACIONES DE TIPO ESCALAR \n";
+
+    ##Modo cuarsitivo
+    function validate(int $edad){
+        if($edad>=18){
+            echo 'Puedes ver la peli';
+        }else{
+            echo 'No puedes ver la peli';
+        }
+    }
+
+
+    validate(18);
+
+
 ?>
