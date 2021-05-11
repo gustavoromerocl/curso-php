@@ -69,3 +69,22 @@
     list($suma,$division,$multiplicion)=operation2(15,5);
     echo "La suma es: $suma La division es $division, La multiplicacion es: $multiplicion";
 ?>
+
+<?php
+    echo "FUNCIONES VARIABLES O ANONIMAS \n";
+    ##Función anónima
+    $operation=function($num1,$num2){
+        return $num1+$num2;
+    };
+    ##Debe terminar con punto y coma
+
+    echo 'El resultado es:'.$operation(2,2);
+
+    ##Función variable
+    function variable(){
+        echo "\nFunción variable";
+    }
+
+    $call = 'variable';
+    $call();
+?>
