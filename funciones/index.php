@@ -50,3 +50,22 @@
 
     call(1);
 ?>
+
+<?php
+    echo "DEVOLVER VALORES \n";
+
+    function operation($param1, $param2){
+        return $param1+$param2;
+    }
+
+    echo var_dump(operation(14,4));
+
+    function operation2($param1, $param2){
+        return array($param1+$param2, $param1/$param2, $param1*$param2 );
+    }
+
+    print_r(operation2(14,4));
+
+    list($suma,$division,$multiplicion)=operation2(15,5);
+    echo "La suma es: $suma La division es $division, La multiplicacion es: $multiplicion";
+?>
