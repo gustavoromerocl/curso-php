@@ -36,3 +36,34 @@
     $coordinates=$batleship['A'][1];
     echo $coordinates;
 ?>
+
+<?php
+    echo "Recorrer arreglos \n";
+    $colors=array('violeta', 'azul', 'rojo');
+    $person=array('name'=>'Gustavo', 'lastname'=>'Romero', 'age'=>'30');
+    $batleship=array(
+        'A'=>array('Mar','Barco','Mar','Mar'),
+        'B'=>array('Mar','Mar','Mar','Mar'),
+        'C'=>array('Mar','Mar','Barco','Mar'),
+        'D'=>array('Mar','Mar','Mar','Mar'),
+    );
+
+    for($i=0;$i < sizeof($colors);$i++){
+        echo "Indice: $i Valor:{$colors[$i]} \n";
+    }
+
+    foreach($person as $key=>$value){
+        echo "$key:$value \n";
+    }
+
+    foreach($batleship as $key=>$value){
+        for($i=0;$i < sizeof($value);$i++){
+            if($batleship[$key][$i]=='Barco'){
+                echo "Fila: $key Columna: $i destruir \n";
+            }else{
+                echo "Fila: $key Columna: $i \n";
+            }
+            
+        }
+    }
+?>
