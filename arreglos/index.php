@@ -23,3 +23,16 @@
     $person['lastname'] = 'Romo'; ##Asignar otro valor
     print_r($person);
 ?>
+
+<?php
+    echo "Arreglos multidimensionales \n";
+    $batleship=array(
+        'A'=>array('Mar','Barco','Mar','Mar'),
+        'B'=>array('Mar','Mar','Mar','Mar'),
+        'C'=>array('Mar','Mar','Barco','Mar'),
+        'D'=>array('Mar','Mar','Mar','Mar'),
+    );
+    print_r($batleship);
+    $coordinates=$batleship['A'][1];
+    echo $coordinates;
+?>
