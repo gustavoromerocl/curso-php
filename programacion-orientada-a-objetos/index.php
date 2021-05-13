@@ -1,26 +1,18 @@
 <?php echo "PROGRAMACION ORIENTADA A OBJETOS \n";?>
 
 <?php echo "Clases y atributos \n";?>
+
+<?php echo "Variables de instancia y clase\n";?>
+
 <?php
-class Person{
-    $name;
-    $lastname;
-    $sex;
-    $nationality;
-    $age;
+    require_once('person.php');
+    //Variable de instancia
+    $jose=new Person();
+    $jose->name='Jose';
+    $jose->lastname='Lopez';
+    $carla=new Person();
+    $carla->name='Carla';
 
-    function run(){
-
-    }
-
-    function see(){
-        echo "Yo veo una camisa azul";
-        $this->name; 
-        $this->run();
-    }
-
-    function talk(){
-
-    }
-}
+    //Variable de clase
+    Person::$color='Azul';
 ?>
