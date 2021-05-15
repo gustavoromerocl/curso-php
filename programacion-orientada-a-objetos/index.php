@@ -42,6 +42,21 @@
 
     $gael=new Employee();
     $gael->run();
+
+
+?>
+
+<?php
+//declare(strict_types=1);
+    require_once('person.php');
+    require_once('client.php');    
+    require_once('employee.php');  
+    echo "\nGet y set\n";
+
+    $lauren=new Client();
+    $lauren->setCorreo("Correo@correo.cl");
+    echo $lauren->getCorreo();
+
 ?>
 
 
