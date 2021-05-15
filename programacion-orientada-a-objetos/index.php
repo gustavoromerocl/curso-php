@@ -11,8 +11,15 @@
     $jose->name='Jose';
     $jose->lastname='Lopez';
     $carla=new Person();
-    $carla->name='Carla';
-
+    $carla->name='Carla'; //asignar valor
+    echo "$carla->name \n";  //acceder al valor publico e imprimir
+    echo $carla->see();
     //Variable de clase
     Person::$color='Azul';
+?>
+
+<?php echo "\nModificadores de acceso \n";
+
+
+
 ?>
