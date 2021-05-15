@@ -4,8 +4,10 @@
 
 <?php echo "Variables de instancia y clase\n";?>
 
+
 <?php
     require_once('person.php');
+    require_once('client.php');
     //Variable de instancia
     $jose=new Person();
     $jose->name='Jose';
@@ -13,13 +15,33 @@
     $carla=new Person();
     $carla->name='Carla'; //asignar valor
     echo "$carla->name \n";  //acceder al valor publico e imprimir
-    echo $carla->see();
+
+    //Usando protected
+    $lauren=new Client();
+    $lauren->eat();
+
+    //$carla->talk();
+
     //Variable de clase
     Person::$color='Azul';
+
+    //Usando protected
+    $lauren=new Client();
+    $lauren->eat();
 ?>
 
-<?php echo "\nModificadores de acceso \n";
+<?php 
+    require_once('person.php');
+    require_once('client.php');    
+    require_once('employee.php');  
+    echo "\nHerencia\n";
 
+    //Usando protected
+    $lauren=new Client();
+    $lauren->eat();
 
-
+    $gael=new Employee();
+    $gael->run();
 ?>
+
+

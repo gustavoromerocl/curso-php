@@ -6,8 +6,9 @@ class Person{
     public $nationality;
     public $age;
     static $color="Rojo";
-    function run(){
 
+    function run(){
+        echo "\nMetodo de la clase padre";
     }
 
     function see(){
