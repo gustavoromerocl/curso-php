@@ -1,6 +1,7 @@
 <?php
 require_once('person.php');
-class Employee extends Person{
+require_once('respiration.php');
+class Employee extends Person implements Respiration{
     private $position;
     private $schedule;
     
@@ -32,6 +33,21 @@ class Employee extends Person{
     {
         $this->schedule = $schedule;
 
+    }
+    public function nasalCavity(){
+
+    }
+    public function mouth(){
+
+    }
+    public function trachea(){
+
+    }
+    public function bronchi(){
+
+    }
+    public function lungs(){
+        
     }
 }
 ?>
