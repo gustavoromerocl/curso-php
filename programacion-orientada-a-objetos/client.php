@@ -48,8 +48,13 @@ class Client extends Person{
         echo 'El dinero que gaste fue:'.$this->plus(4,4);
     }
 
+    function say(Employee $employee){
+        echo "{$this->getName()} felicitame al chef {$employee->getName()}";
+    }
+    
     function __destruct(){
         echo 'Limpieza';
     }
+
 }
 ?>

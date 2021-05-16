@@ -7,6 +7,17 @@ class Person{
     public $age;
     static $color="Rojo";
 
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+
+    }
+
     function run(){
         echo "\nMetodo de la clase padre";
     }
@@ -38,5 +49,6 @@ class Person{
                 break;
         }
     }
+
 }
 ?>

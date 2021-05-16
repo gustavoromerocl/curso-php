@@ -60,8 +60,6 @@
 ?>
 
 <?php
-//declare(strict_types=1);
-    require_once('person.php');
     require_once('client.php');    
     echo "\nTraits\n";
 
@@ -71,4 +69,15 @@
 
 ?>
 
+<?php
+    require_once('client.php');    
+    require_once('employee.php');  
+    echo "\nType hinting\n";
 
+    $lauren=new Client();
+    $lauren=setName('Lauren');
+    $gael=new Employee();
+    $gael=setName('Gael');
+
+    $lauren->say($gael);
+?>
