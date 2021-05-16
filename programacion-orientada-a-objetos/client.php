@@ -1,6 +1,8 @@
 <?php
 require_once('person.php');
+require_once('operation.php');
 class Client extends Person{
+    use Operation;
     private $common;
     private $correo;
     
@@ -39,6 +41,11 @@ class Client extends Person{
     {
         $this->correo = $correo;
 
+    }
+
+    ///traits
+    function pay(){
+        echo 'El dinero que gaste fue:'.$this->plus(4,4);
     }
 
     function __destruct(){

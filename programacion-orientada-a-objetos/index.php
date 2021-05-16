@@ -59,4 +59,16 @@
 
 ?>
 
+<?php
+//declare(strict_types=1);
+    require_once('person.php');
+    require_once('client.php');    
+    echo "\nTraits\n";
+
+    $lauren=new Client();
+    $lauren->pay();
+    echo $lauren->plus(10,10); //usar directamente el metodo de operation
+
+?>
+
 
