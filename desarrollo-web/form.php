@@ -13,3 +13,4 @@ echo "Nombre $name Apellido $lastname Direccion $adress Telefono $phone Sexo $se
 header("location:index.php?answer=Tus datos han sido recibidos&name=gracias {$name}"); 
 }
 ?>
+
