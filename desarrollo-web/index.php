@@ -1,3 +1,15 @@
+<?php
+//https://www.php.net/manual/es/ini.list.php
+session_start();
+//session_destroy(); //Elimina todas las sesiones
+//unset($_SESSION['login']); //Elimina la sesion indicada
+if(isset($_SESSION['login'])){
+    echo 'Bienvenido '.$_SESSION['login'];
+}else{
+    echo 'Sin sesión';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +19,8 @@
     <title>Document</title>
 </head>
 <body>
-<form method="post" action="form.php"> 
+<form method="post" action="login_sesion.php"> 
+<!--
     <table>
         <?php
             $array=array('name'=>'Nombre', 'lastName'=>'Apellido', 'adress'=>'Direccion', 'phone'=>'Phone');
@@ -38,7 +51,11 @@
             </td>
         </tr>
     </table>
+-->
+Usuario: <input type="text" name="userName"><br>
+Contraseña: <input type="password" name="password"><br>
+<input type="submit" name="send" text="Enviar"><br>
 </form>
-<h1><?php echo "{$_GET['answer']} {$_GET['name']}";?></h1>
+<!--<h1><?php ##echo "{$_GET['answer']} {$_GET['name']}";?></h1>-->
 </body>
 </html>
