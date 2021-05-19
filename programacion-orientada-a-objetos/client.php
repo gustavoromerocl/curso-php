@@ -1,6 +1,8 @@
 <?php
 require_once('person.php');
 require_once('operation.php');
+require_once('employee.php');
+
 class Client extends Person{
     use Operation;
     private $common;

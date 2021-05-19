@@ -47,10 +47,16 @@
 ?>
 
 <?php
-//declare(strict_types=1);
-    require_once('person.php');
-    require_once('client.php');    
-    require_once('employee.php');  
+//declare(strict_types=1);   
+    require_once('autoload.php');  
+    (new AutoLoader())->__autoload();
+
+    function load($class){
+        echo $class;
+    }
+
+    spl_autoload('load');
+
     echo "\nGet y set\n";
 
     $lauren=new Client();
