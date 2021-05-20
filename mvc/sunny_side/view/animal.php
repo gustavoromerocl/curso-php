@@ -17,13 +17,16 @@
             <?php echo $value;?>
         </td>
         <?php endforeach ?>
+        <td>Genero</td>
         </tr>
+        <?php foreach($this->model->getAll() as $animal): ?>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><?php echo $animal->name ?></td>
+            <td><?php echo $animal->specie ?></td>
+            <td><?php echo $animal->breed ?></td>
+            <td><?php echo $animal->color ?></td>
+            <td><?php echo $animal->age ?></td>
+            <td><?php echo $animal->gender ?></td>
             <td><a href="">Editar</a></td>
             <td><a onClick="javascript: return confirm('¿Seguro de eliminar el registro?');" href="">Eliminar</a></td>
         </tr>
