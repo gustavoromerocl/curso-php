@@ -12,7 +12,7 @@ class Connection
     {
         try
         {
-            $pdo=new PDO("{$this->driver}:host={$this->host};dbName={$this->dbName};charset={$this->charset};", $this->user, $this->pass);
+            $pdo=new PDO("{$this->driver}:host={$this->host};dbname={$this->dbName};charset={$this->charset};", $this->user, $this->pass);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             ##https://www.php.net/manual/es/pdo.setattribute.php
 

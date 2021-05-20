@@ -48,7 +48,7 @@ abstract class Crud extends Connection
             echo $e->getMessage();
         }
     }
-
+    
     abstract function create();
     abstract function update();
 }
