@@ -30,7 +30,7 @@ abstract class Crud extends Connection
         {
             $stm=$this->pdo->prepare("SELECT * FROM $this->table WHERE id=?");
             $stm->execute(array($id));
-            return $stm->fetchAll(PDO::FETCH_OBJ);
+            return $stm->fetch(PDO::FETCH_OBJ);
         }catch(PDOException $e)
         {
             echo $e->getMessage();

@@ -25,18 +25,19 @@ class AnimalController
 
     public function save()
     {
-        $animal = new Animal();
-        $animal->id=$_REQUEST['id'];
-        $animal->name=$_REQUEST['name'];
-        $animal->specie=$_REQUEST['specie'];
-        $animal->breed=$_REQUEST['breed'];
-        $animal->gender=$_REQUEST['gender'];
-        $animal->color=$_REQUEST['color'];
-        $animal->age=$_REQUEST['age'];
-        $animal->id>0?$animal->update():$animal->create();
-        header('Location: index.php');
+      $animal=new Animal();
+      $animal->id=$_REQUEST['id'];
+      $animal->name=$_REQUEST['name'];
+      $animal->specie=$_REQUEST['specie'];
+      $animal->breed=$_REQUEST['breed'];
+      $animal->gender=$_REQUEST['gender'];
+      $animal->color=$_REQUEST['color'];
+      $animal->age=$_REQUEST['age'];
+      $animal->getId() > 0?$animal->update():$animal->create(); 
+      header('Location: index.php');
     }
 
+    
     public function quit()
     {
         $this->model->delete($_REQUEST['id']);

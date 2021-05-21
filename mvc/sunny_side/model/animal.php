@@ -30,7 +30,7 @@ class Animal extends Crud
     {
         try
         {
-            $stm=$this->pdo->prepare("INSERT INTO ".self::TABLE."(name, specie, breed, gender,color, age) VALUES (?,?,?,?,?,?)");
+            $stm=$this->pdo->prepare("INSERT INTO ".self::TABLE." (name, specie, breed, gender, color, age) VALUES (?,?,?,?,?,?)");
             $stm->execute(array($this->name,$this->specie,$this->breed,$this->gender,$this->color,$this->age));
         }catch(PDOException $e)
         {
@@ -51,5 +51,15 @@ class Animal extends Crud
         }
     }
 
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
 }
 ?>
